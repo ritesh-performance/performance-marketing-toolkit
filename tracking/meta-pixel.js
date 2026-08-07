@@ -1,9 +1,9 @@
-// Meta Pixel Purchase Event
+// User loaded a website page
+fbq('track', 'PageView');
 
-fbq('track', 'Purchase', {
-  value: 1499.00,
-  currency: 'INR'
-});
+// User viewed an important product page
+fbq('track', 'ViewContent');
+
 // User added a product to cart
 fbq('track', 'AddToCart');
 
