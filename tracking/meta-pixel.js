@@ -4,9 +4,12 @@ fbq('track', 'PageView');
 // User viewed an important product page
 fbq('track', 'ViewContent');
 
-// User added a product to cart
-fbq('track', 'AddToCart');
-
+fbq('track', 'AddToCart', {
+  content_ids: ['SHOE123'],
+  content_type: 'product',
+  value: 2000,
+  currency: 'INR'
+});
 // User started checkout
 fbq('track', 'InitiateCheckout');
 
